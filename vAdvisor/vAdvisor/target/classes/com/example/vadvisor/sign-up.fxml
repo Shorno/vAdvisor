@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vadvisor.SignUpController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #345da6;">
+         <children>
+            <ImageView fitHeight="270.0" fitWidth="231.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@vAdvisor-logos_transparent.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="56.0" layoutY="252.0" text="Welcome!" textFill="#eeff2e">
+               <font>
+                  <Font name="Cambria" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="414.0">
+         <children>
+            <Label layoutX="27.0" layoutY="62.0" text="Username">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="119.0" text="Password">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameText_Field" layoutX="140.0" layoutY="65.0" promptText="Enter your username" />
+            <TextField fx:id="passwordText_Field" layoutX="140.0" layoutY="122.0" promptText="Enter your password" />
+            <Button fx:id="signup_Button" layoutX="142.0" layoutY="292.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="149.0" style="-fx-background-color: #345da6;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="124.0" layoutY="174.0" text="Your Favourite Course ">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="cse111RadioButton" layoutX="151.0" layoutY="213.0" mnemonicParsing="false" text="CSE 111">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="cse222RadioButton" layoutX="151.0" layoutY="240.0" mnemonicParsing="false" text="CSE 222">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="56.0" layoutY="342.0" text="Already a member?">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="login_Button" layoutX="207.0" layoutY="340.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="82.0" style="-fx-background-color: #345da6;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
